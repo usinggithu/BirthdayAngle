@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Invitation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 You're Invited! 🎉</h1>
+        <h2>Come Celebrate Madison's Birthday!</h2>
+
+        <div class="card">
+            <h3>🎂 Madison's 14th Birthday</h3>
+            <p><strong>📅 Date:</strong> Saturday, August 8</p>
+            <p><strong>⏰ Time:</strong> 3:00 - 6:00 PM</p>
+            <p><strong>📍 Location:</strong> Madison's House</p>
+            <p class="message">Please message Maddie for the house address.</p>
+
+            <hr />
+
+            <h3>RSVP</h3>
+            <form
+                id="rsvpForm"
+                action="https://script.google.com/macros/s/AKfycbydyZwhBpL1mRBa4__J_2huggPIq1JlA7k4V0uAsc0jaECudAAsuOsRs8lHGORMwWuqXA/exec"
+                method="POST"
+                target="rsvpFrame"
+            >
+                <input type="text" id="guestName" name="name" placeholder="Enter your name" required />
+                <input type="hidden" id="submitTime" name="time" />
+                <button id="rsvpButton" type="submit">RSVP</button>
+            </form>
+            <iframe id="rsvpFrame" name="rsvpFrame" title="RSVP submission frame" style="display:none"></iframe>
+            <p id="response" aria-live="polite"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
