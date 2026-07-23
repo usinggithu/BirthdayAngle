@@ -23,10 +23,3 @@ A beautiful interactive birthday invitation webpage for Madison's 14th Birthday!
 2. Click the RSVP button to confirm attendance
 3. Confetti animation celebrates the response
 4. RSVP data is sent to Google Sheets for tracking
-
-## Technologies Used
-
-- HTML5
-- CSS3 (with animations and gradients)
-- Vanilla JavaScript
-- Google Apps Script (for backend data storage)
